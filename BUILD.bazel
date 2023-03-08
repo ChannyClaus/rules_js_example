@@ -10,3 +10,12 @@ js_binary(
     data = ["//:node_modules/mocha"],
     entry_point = "require_mocha.js",
 )
+
+js_test(
+    name = "test_one",
+    data = [
+        "//:node_modules/mocha",
+        "test_one.js"
+    ],
+    entry_point = "test.js",
+)
